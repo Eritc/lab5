@@ -43,4 +43,13 @@ function anagrammedName(name) {
 		console.log(name + " not known for anagramming.");
 		return name;
 	}
+function friendclick(e) 
+{
+	alert("hi");
+	e.preventDefault();
+	s = $('this').text();
+	$("this").val = s;
+	annagrammed(s);
+}
+$(".friend_name").click(friendclick);
 }
